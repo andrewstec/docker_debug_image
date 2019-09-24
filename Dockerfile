@@ -1,12 +1,13 @@
 ## Pre-compiled Linux distributions with pre-installed Node JS, Java, Python, etc. are available.
 ## https://hub.docker.com/search/?type=image
-FROM debian:wheezy
+FROM alpine:3.7
 
 WORKDIR /gradingApp
 
 ## Install any dependencies needed to mark your code using a package manager compatible with your Linux distribution
-RUN apt-get update
-RUN apt-get install git
+## RUN apt-get update
+## RUN apt-get install git
+RUN echo 'hello world!'
 
 COPY exampleScript/helloWorld.sh /gradingApp/helloWorld.sh
 
