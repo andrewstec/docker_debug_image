@@ -1,6 +1,6 @@
 ## Pre-compiled Linux distributions with pre-installed Node JS, Java, Python, etc. are available.
 ## https://hub.docker.com/search/?type=image
-FROM alpine:3.7
+FROM alpine
 
 WORKDIR /gradingApp
 
